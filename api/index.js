@@ -1,5 +1,11 @@
 'use strict';
 
-api.users = require('users.js');
+const users = require('./controllers/users');
 
-module.exports = api;
+// users.create
+
+// api.users.create
+
+module.exports = {
+  users : users
+};

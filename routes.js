@@ -3,23 +3,24 @@
 const {Router} = require('express');
 const api = require('./api');
 
+//api.users.create
+
+const bodyParser = require('body-parser');
+
 const apiRoutes = new Router();
 // pour définir les routes
 
-const routes = function (app) {
+apiRoutes.use(bodyParser.urlencoded({extended: false}));
+apiRoutes.use(bodyParser.json());
 
-  app.use('/api', apiRoutes);
+apiRoutes.get('/users', function (req, res) {
+  // method de controller pour user get
+});
 
-  apiRoutes.get('/users', function (req, res){
-    // Selon la route appele la methode qui nous interesse
-    api.users.find();
-  });
 
-  apiRoutes.post('/users', function (req, res){
-    // Selon la route appele la methode qui nous interesse
-    api.users.update();
-  });
+// methode post localhost:3000/api/users
+apiRoutes.post('/users', function (req, res) {
+  api.users.create(req, res);
+})
 
-}
-
-module.exports = routes;
+module.exports = apiRoutes;
