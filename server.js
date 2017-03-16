@@ -10,16 +10,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-//routes app.get app.all 
-app.use('/api', routes);
-
-//... ->> controllers
-
-// controllers --> requete base de donnees
-
-//req.send()
-
-app.use(express.static('./public'));
+app.use(routes);
 
 app.listen(3000, (err) => {
   console.log('yaaaaaaay');
