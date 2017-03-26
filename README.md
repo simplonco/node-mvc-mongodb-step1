@@ -5,13 +5,15 @@
 # ARCHITECTURE MVC
 Découper les différentes étapes d'une architecture MVC avec node et mongo
 
-Ce chapitre s'inscrit dans le module **Node MVC**
+Ce chapitre s'inscrit dans le module **Node MVC et MongoDB**
 
-1. [x] [Node MVC étape 1](https://github.com/simplonco/node-mvc-mongodb-step1)
-	
-2. [ ] [Node MVC étape 2](https://github.com/simplonco/node-mvc-mongodb-step2)
-	
-3. [ ] [Node MVC étape 3](https://github.com/simplonco/node-mvc-mongodb-step3)
+1. [ ] [Node MVC MongoDB étape 1](https://github.com/simplonco/node-mvc-mongodb-step1)
+    
+2. [x] [Node MVC MongoDB étape 2](https://github.com/simplonco/node-mvc-mongodb-step2)
+    
+3. [ ] [Node MVC MongoDB étape 3](https://github.com/simplonco/node-mvc-mongodb-step3)
+
+Il existe un [module identique avec SQLite](https://github.com/simplonco/node-mvc-sqlite-step1).
 
 Vous pouvez trouver ce module dans les parcours suivants :
 
