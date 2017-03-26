@@ -19,9 +19,10 @@ Vous pouvez trouver ce module dans les parcours suivants :
 
 + Développeur Web Fullstack
 
+------------
 ![architecture](readme/architecture.jpg)
 
-------------
+
 MVC, qu’est-ce que c’est ?
 
 Le design pattern **Model-View-Controller** est une façon d’organiser son code.
@@ -43,13 +44,13 @@ Imaginons que je commande un plat, je vais request ce plat (_url_) à mon serveu
 	express.get(’users’, userController);
 	//serveur.order(’plat’, cuisinier);
 	```
-	![routeur](readme/routeur.jpg)
+	<img src="readme/routeur.jpg" width="500">
 + Il va utiliser la recette (_method_) correspondante au plat (_url_).
 	```
 	express.get(’users’, userController.find);
 	//serveur.order(’plat’, cuisinier.recette);
 	```
-	![commande](readme/commande.jpg)
+	<img src="readme/commande.jpg" width="500">
 + Le cuisinier pourra utiliser des ingrédients (_data_) fournit par un grossiste (_db engine_) pour répondre à cette commande (_request_).
 	```
 	db.users.find(...).then(...)
@@ -67,6 +68,8 @@ On a donc nos dossiers :
 + et _database_ qui contient _nos models_
 Et nos fichiers _server.js_ et _routes.js_ à l’extérieur. 
 
-![skeleton](readme/skeleton.png)
+
+<img src="readme/skeleton.png" width="225">
+
 
 Mais comment exactement s’éxecute le traitement de cette requête ?
