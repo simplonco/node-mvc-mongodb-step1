@@ -29,7 +29,7 @@ Pour gagner en :
 
 Mais concrètement, c’est quoi une view, un model, un controller ?
 
-Voyons ça en prenant en nous aidant de l’exemple d’un restaurant.
+Voyons ça en nous aidant de l’exemple d’un restaurant.
 
 Imaginons que je commande un plat, je vais request ce plat (url) à mon serveur.
 + Le serveur pourra alors envoyer (router) cette commande à un cuisinier (controller).
@@ -50,7 +50,7 @@ Imaginons que je commande un plat, je vais request ce plat (url) à mon serveur.
 	```
 
 On va donc commencer par bien séparer les différents espaces ( salle, cuisine, et grossiste ) pour mieux organiser notre code.
-Et laisser ne pas enfermer notre server et son menu (route) dans un des espaces afin qu’il puisse accéder librement à tous.
+Et ne pas enfermer notre server et son menu (route) dans un des espaces afin qu’il puisse accéder librement à tous.
 On a donc notre dossier public, api et database et server.js et routes.js à l’extérieur. 
 
 
