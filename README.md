@@ -7,9 +7,9 @@ Découper les différentes étapes d'une architecture MVC avec node et mongo
 
 Ce chapitre s'inscrit dans le module **Node MVC et MongoDB**
 
-1. [ ] [Node MVC MongoDB étape 1](https://github.com/simplonco/node-mvc-mongodb-step1)
+1. [x] [Node MVC MongoDB étape 1](https://github.com/simplonco/node-mvc-mongodb-step1)
     
-2. [x] [Node MVC MongoDB étape 2](https://github.com/simplonco/node-mvc-mongodb-step2)
+2. [ ] [Node MVC MongoDB étape 2](https://github.com/simplonco/node-mvc-mongodb-step2)
     
 3. [ ] [Node MVC MongoDB étape 3](https://github.com/simplonco/node-mvc-mongodb-step3)
 
