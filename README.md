@@ -5,13 +5,13 @@
 # ARCHITECTURE MVC
 Découper les différentes étapes d'une architecture MVC avec node et mongo
 
-Ce chapitre s'inscrit dans le module [Diagramme UML](https://github.com/simplonco/Diagrammes-UML).
+Ce chapitre s'inscrit dans le module **Node MVC**
 
-1. [x] [Diagramme Use-Case](https://github.com/simplonco/node-mvc-mongodb-step1)
+1. [x] [Node MVC étape 1](https://github.com/simplonco/node-mvc-mongodb-step1)
 	
-2. [ ] [Diagramme de Séquence](https://github.com/simplonco/node-mvc-mongodb-step2)
+2. [ ] [Node MVC étape 2](https://github.com/simplonco/node-mvc-mongodb-step2)
 	
-3. [ ] [Diagramme d'Intéraction](https://github.com/simplonco/node-mvc-mongodb-step3)
+3. [ ] [Node MVC étape 3](https://github.com/simplonco/node-mvc-mongodb-step3)
 
 Vous pouvez trouver ce module dans les parcours suivants :
 
