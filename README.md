@@ -63,9 +63,11 @@ Imaginons que je commande un plat, je vais request ce plat (_url_) à mon serveu
 On va donc commencer par bien **séparer les différents espaces** ( salle, cuisine, et grossiste ) pour mieux organiser notre code.
 Ne pas enfermer notre server et son menu (route) dans un des espaces afin qu’il puisse accéder librement à tous.
 On a donc nos dossiers :
+
 + _public_ qui contient un index.html qui sera plus tard l'équivalent de nos _views_ ([...](https://github.com/simplonco/node-mvc-mongodb-step3))
 + _api_ qui contient nos _controllers_
 + et _database_ qui contient _nos models_
+
 
 Et enfin nos fichiers _server.js_ et _routes.js_ à l’extérieur. 
 
