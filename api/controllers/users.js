@@ -1,21 +1,11 @@
 'use strict';
 
-
-const db = require('../../database');
-
 const users  = {
- // method...
+ // Lister les différentes méthodes
 
-  create : (req, res) => {
-    // var newUser = new UserSchema({ email: 'sdsjh.dhf@dhfg.com' })
-    const newUser = new db.users(req.body);
-    newUser.save()
-    .then ( data => {
-      res.send(`Operation succeeded : \n ${data}`);
-    })
-    .catch ( err => {
-      res.send('Operation failed : \n' + err);
-    });
+  find : (req, res) => {
+    // On veut créer un nouvel utilisateur on va donc à priori avoir besoin de la base de données ici
+    res.send('This is where we will handle the database');
   }
 
 }

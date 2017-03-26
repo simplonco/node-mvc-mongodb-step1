@@ -1,35 +1,23 @@
 'use strict';
 
+// Initialiser la connection
+//------------------------------------------------//
 const mongoose = require('mongoose');
-const users = require('./models/users');
-const products = require('./models/products');
-
 mongoose.connect('mongodb://localhost:27017/test');
+//------------------------------------------------//
 
-mongoose.connection.on('error', err => {
-  console.log('ERROR close MongoDB process', err);
-});
+// Construire les models
+//------------------------------------------------//
+const Schema = mongoose.schema
 
-mongoose.connection.on('connnected', function () {
-  console.log('MongoDb connection success on  port 27017')
-});
+// /!\ N'oubliez pas d'importer chaque model créé.
+const users = require('./models/users');
 
-mongoose.connection.on('disconnected', function () {
-  console.log('MongoDB process disconnected');
-});
-
-process.on('SIGINT', function () {
-  mongoose.connection.close(function () {
-    console.log('Server process terminated. Closing MongoDB');
-    process.exit(0);
-  });
-});
-
+// /!\ N'oubliez pas d'ajouter chaque model créés à db
 const db = {
-  users: mongoose.model('Users', users),
-  products: mongoose.model('Products', products)
+  users: mongoose.model('Users', new Schema(users))
 }
+//------------------------------------------------//
 
-
-// db.users, db.products
+// Exporter les models
 module.exports = db;
