@@ -72,4 +72,4 @@ Et nos fichiers _server.js_ et _routes.js_ à l’extérieur.
 <img src="readme/skeleton.png" width="225">
 
 
-Mais comment exactement s’éxecute le traitement de cette requête ?
+Mais comment exactement s’éxecute le **[traitement de cette requête](https://github.com/simplonco/node-mvc-mongodb-step2)** ?
